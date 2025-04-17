@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley</title>
+    <style>
+        #face{
+            height:500px;
+            width:500px;
+            background-color: rgb(245, 201, 4);
+            border-radius:50%
+        }
+        #lefteye , 
+        #righteye{
+            height:50px;
+            width:50px;
+            background-color: black;
+            border-radius: 50%;
+            margin:50px;
+            display:inline-block;
+            padding-top:40px;  
+            position:relative;
+            top:70px;
+            left:90px;
+        }
+        #mouth{
+            height:140px;
+            width:300px;
+            background-color: brown;
+            position:absolute;
+            top:300px;
+            left:110px;
+            border-bottom-left-radius:140px;
+            border-bottom-right-radius:140px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="face">
+            <div id="lefteye"></div>
+            <div id="righteye"></div>
+            <div id="mouth"></div>
+        </div>
+    </section>
+</body>
+</html>
