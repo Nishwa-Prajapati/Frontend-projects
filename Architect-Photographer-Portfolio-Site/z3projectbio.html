@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve McCurry bio</title>
+    <link rel="stylesheet" href="z3.css">
+</head>
+<body>
+    <nav class="header" id="main-header">
+        <a href="#" onclick="openslidemenu()">
+            <svg viewBox="0 0 100 80" width="60" height="40">
+                <rect width="100" height="20" rx="10"></rect>
+                <rect y="30" width="50" height="20" rx="10"></rect>
+            </svg>
+        </a>
+        <p> Steve McCurry </p>
 
+        <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeslidemenu()">&times;</a>
+            <a href="z3project1.html" class="nav-option">Portfolio</a>
+            <a href="z3projectbio.html" class="nav-option">Bio</a>
+            <a href="#section-contact" class="nav-option">Contact</a>        
+        </div>
+    </nav>
+    <table class="bio-table" id="table-section">
+        <tr>
+            <td>
+                <h1> About </h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bio-content">
+                I’m Steve McCurry, a photographer specializing in capturing the character of architectural projects. My images feature residential and commercial properties, civic and cultural institutions, and more. If you have an idea for a commission, get in touch; I would love to help tell your unique story.</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1> Clients </h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bio-content">
+                    Perkins & Davis, MCASF, SkyMine, Owen Hobert Group, Brooks Family, One Step Studio, Arlock Arena, GFP Developers</div>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <h1> Direct </h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bio-content">
+                    <p>info@mysite.com</p>
+                    <p>123-456-7890</p>
+                    <p>Instagram @stevemccurry</p></div>
+                </td>
+        </tr>
+
+        <tr>
+            <td id="section-contact">
+                <h1> Contact </h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="bio-content">
+                    <p>Representation/Robertson Agency</p>
+                    <p>info@mysite.com</p></div>
+                </td>
+        </tr>
+    </table>
+
+    <div class="wrapper">
+        <div class="input-data">
+                <table class="form-table">
+                    <tr>
+                        <td >
+                            <input type="text" id="fname" name="fname">
+                            <label for="name">First Name</label>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <input type="text" id="lname" name="lname">
+                            <label for="lname">Last Name</label>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <p id="demo" ></p>
+                        </td>
+                        <td>
+                            <p id="demo1"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="email" id="mail" name="mail">
+                            <label for="mail">E-mail</label>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td colspan="2">
+                            <p id="demo2" ></p>
+                        </td>
+                        <td>
+                            <p id="demo3"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <textarea id="message" name="message" rows="3" cols="35"></textarea>
+                            <label for="message">Write message</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+                    <tr>
+                        <td class="button">
+                            <button onclick="myfunction()">confirm</button>
+                        </td>
+                        <td class="button">
+                            <button onclick="location.href='form.php';">submit</button>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script>
+        function openslidemenu()
+        {
+            document.getElementById('side-menu').style.width='400px';
+        }
+
+        function closeslidemenu()
+        {
+            document.getElementById('side-menu').style.width='0px';
+        }
+    </script>
+
+    <script>
+        function myfunction()
+        {
+            check_name();
+            let name=document.getElementById('fname').value;
+            document.getElementById('fname').innerHtml="";
+            var letters=/^[A-Za-z]+$/;
+
+            if(name.length==0)
+            {
+                document.getElementById('demo').innerHTML="firstname Empty";
+            }
+            else
+            {
+                if(name.match(letters))
+                {
+                    document.getElementById('demo1').innerHTML="firstname valid";
+                }
+                else
+                {
+                    document.getElementById('demo').innerHTML="Not text";
+                }
+            }
+        }
+
+        function check_name()
+        {
+            check_mail();
+
+        let lastname=document.getElementById('lname').value;
+        document.getElementById('lname').innerHtml="";
+        var letters=/^[A-Za-z]+$/;
+
+        if(lastname.length==0)
+            {
+                document.getElementById('demo').innerHTML="lastname Empty";
+            }
+            else
+            {
+                if(lastname.match(letters))
+                {
+                    document.getElementById('demo1').innerHTML="lastname valid";
+                }
+                else
+                {
+                    document.getElementById('demo').innerHTML="Not text";
+                }
+            }
+        }
+
+        function check_mail()
+        {
+            let mail1=document.getElementById('mail').value;
+            document.getElementById('mail').innerHtml="";
+            var letters=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+            if(mail1.length==0)
+            {
+                document.getElementById('demo2').innerHTML="mail Empty";
+            }
+            else
+            {
+                if(mail1.match(letters))
+                {
+                    document.getElementById('demo3').innerHTML="mail valid";
+                }
+                else
+                {
+                    document.getElementById('demo2').innerHTML="mail invalid";
+                }
+        }
+    }
+    </script>
+
+        <footer>
+            <div class="contact">
+                <p>CONTACT 123-456-7890</p>
+            </div>
+            <div>
+                <p>INSTAGRAM @stevemccurry</p>
+            </div>
+        </footer>
+
+</body>
+</html>
