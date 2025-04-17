@@ -1,1 +1,84 @@
+#header_container{
+    height:1030px;
+    width:1900px;
+    margin:10px auto;
+    background-image: url('https://www.india.com/wp-content/uploads/2021/12/Classic350_5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header_container_1{
+    height:100px;
+    width:700px;
+    display:flex;
+    flex-direction:flex-start;
+    justify-content:space-evenly;
+    margin-top:10px;
+    align-items:center;
+}
+#header_container_2{
+    padding-left:1600px;
+    display:flex;
+}
+#header_container_3{
+    height:200px;
+    width:1900;
+    background-color: rgba(63, 62, 62, 0.4);
+}
+#header_section_div{
+    padding:300px 0 0 1300px;
+}
+a{
+    line-height: 10px;
+    border:2px solid black;
+    padding:10px;
+    background-color: rgb(255,255,255,0.3);
+    color:black;
+    text-decoration: none;
+    font-size:30px;
+    border-radius:10px;
+}
+a:hover{
+    background-color: white;
+    font-weight: bolder;
+    color:black;
+    box-shadow: 2px 2px black;
+}
+#main_content{
+    text-align:center;
+    padding:200px 0 100px 0;
+    font-size: larger;
+}
+#main_container{
+    height:300px;
+    width:1900px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:flex-start;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:150px;
+}
+#main_container1{
+    height:300px;
+    width:1800px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:flex-start;
+    justify-content:space-around;
+    font-size: 30px;
+}
 
+#footer1{
+    height:400px;
+    width:1900px;
+}
+
+.footer_container1{
+    height:300px;
+    width:1800px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 25px;
+    padding:50px 0 40px 100px;
+}
