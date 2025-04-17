@@ -1,1 +1,47 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Hover</title>
+    <style>
+        .card{
+            height:200px;
+            width:200px;
+            border:2px solid black;
+            display:inline-block;
+            margin:10px;
+            border-radius:20px;
+            padding:0 20px 0 20px;
+            box-shadow:2px 2px 8px black;
+        }
+        .desc{
+            width:100px;
+            height:100px;
+        }
+        img{
+            width:50%;
+            border-radius:20px 0 0 0;
+        }
+        .card:hover{
+            box-shadow:4px 4px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://image.shutterstock.com/image-vector/asian-man-portrait-260nw-409356763.jpg" alt="man" >
+        <div class="desc">
+            <h3>Kush Patel</h3>
+            <p>Manager</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://www.shutterstock.com/image-vector/portrait-woman-brown-long-hair-260nw-2096888644.jpg" alt="girl" >
+        <div class="desc">
+            <h3>Pinky Patel</h3>
+            <p>Accounting</p>
+        </div>
+    </div>
+</body>
+</html>
