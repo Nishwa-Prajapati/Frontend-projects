@@ -1,1 +1,147 @@
+nav{
+    display:flex;
+    height:100px;
+    width:1400px;
+    justify-content:space-between;
+    align-items: first baseline;
+    position:sticky;
+    top:0;
+    background-color: white;
+}
+nav p{
+    font-family:'young-serif','Times New Roman', Times, serif;
+    font-size:40px;
+    padding-right:50px;
+}
+nav svg{
+    margin-left:50px;
+}
+.side-nav{
+    height:100%;
+    width:0px;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:rgb(222, 69, 3);
+    overflow-x:hidden;
+    padding-top:70px;
+    transition:0.8s;
+}
 
+.nav-option{
+    display:block;
+    margin-top:20px;
+    padding:10px 7px 7px 80px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:35px;
+    color:black;
+    transition:0.3s;
+}
+.nav-option:hover{
+    color:white;
+}
+
+.nav-option:active{
+    color:white;
+}
+
+.side-nav .btn-close{
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size:40px;
+    margin-left:50px;
+    text-decoration: none;
+    color:white;
+}
+.main-header-title{
+    padding-left:1150px;
+    font-size:17px;
+}
+.photography{
+    margin:150px 0px 0px 30px;
+}
+
+.project-title{
+    font-family:'young-serif','Times New Roman', Times, serif;
+    font-size:30px;
+    margin-top:60px;
+    margin-left:40px;
+}
+
+.topic-name {
+    margin-left:50px;
+    margin-right:10px;
+    font-weight:bold;
+    color:rgb(103, 103, 103);
+}
+
+.sonnenberg-gallery{
+    margin-top:40px;
+}
+
+.bio-content{
+    height:150px;
+    width:400px;
+    line-height: 30px;;
+}
+
+.bio-table{
+    margin-left:80px;
+}
+
+.form-table input{
+    height:100%;
+    width:100%;
+    border:none;
+    font-size:17px;
+    border-bottom:2px solid black;
+}
+
+.form-table textarea{
+    height:100%;
+    width:100%;
+    border:none;
+    font-size:17px;
+    border-bottom:2px solid black;
+}
+
+.wrapper{
+    margin-left:60px;
+    margin-top:30px;
+}
+
+.button{
+    height:20px;
+    width:50px;
+   border:2px solid black;
+   padding:10px;
+   margin-left:40px;
+   border-radius: 3%;
+   background-color: rgb(150, 150, 150);
+}
+
+#demo{
+    color:red;
+}
+#demo1{
+    color:green;
+}
+#demo2{
+    color:red;
+}
+#demo3{
+    color:green;
+}
+
+footer{
+    display:flex;
+    height:100px;
+    width:1200px;
+    justify-content:space-between;
+    font-size:20px;
+    margin-left:60px;
+    margin-top:60px;
+}
