@@ -1,4 +1,4 @@
-# 🌐 Frontend Projects Collection  and many more to come
+# 🌐 Selected Frontend Projects Collection 
 
 This repository contains a collection of simple and creative **frontend projects** made using **HTML, CSS, and JavaScript**. Each project explores a different concept in web development and design — from animations to UI components and complete web pages.
 
