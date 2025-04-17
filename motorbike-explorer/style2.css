@@ -1,1 +1,64 @@
+/* second file */
 
+#header2_container{
+    background-color: rgba(63, 62, 62, 0.4);
+    height:100px;
+}
+#header2_container2{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-around;
+    height:30px;
+    width:80px;
+    padding:20px 0 0 10px;
+}
+
+a{
+    margin-left:10px;
+    text-decoration: none;
+    color:black;
+    font-size: 27px;
+}
+
+.main2_container1{
+    height:300px;
+    width:1400px;
+    margin:100px auto;
+    display:flex;
+    background-color: rgb(147, 82, 29);
+    border-radius:10px;
+}
+.main2_content_div1{
+    padding:30px 30px 30px 30px;
+    font-size: 22px;
+}
+
+.main2_container2{
+    height:300px;
+    width:1400px;
+    margin:100px auto;
+    display:flex;
+    background-color: rgb(147, 113, 29);
+    border-radius:10px;
+}
+
+
+.main2_content_div2{
+    padding:10px 30px 10px 30px;
+    font-size: 22px;
+}
+
+#footer2{
+    height:400px;
+    width:1900px;
+}
+
+.footer_container1{
+    height:300px;
+    width:1800px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 25px;
+    padding:50px 0 40px 100px;
+}
